@@ -1,0 +1,79 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "eraseall",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "scopebook_struct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "myScope",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "tradingbook_struct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "mykey",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "eraseall",
+            "type": "eraseall",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "receivebook",
+            "type": "tradingbook_struct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "receivescope",
+            "type": "scopebook_struct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "sendbook",
+            "type": "tradingbook_struct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "sendscope",
+            "type": "scopebook_struct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
